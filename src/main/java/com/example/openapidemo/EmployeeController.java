@@ -14,10 +14,12 @@ import java.util.List;
 
 @RestController
 public class EmployeeController {
-    @Autowired
-    private EmployeeRepository repository;
 
-    public EmployeeController(EmployeeRepository repository) {
+    @Autowired
+    private final ShoeRepository repository;
+
+
+    public EmployeeController(ShoeRepository repository) {
         this.repository = repository;
     }
 
